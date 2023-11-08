@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-lg-12 mainHeader">
+                <h1>My Task Board</h1>
+            </div>
+        </div>
+        <form action="">
+            <div class="row">
+                <div class="col-sm-12 col-lg-12">
+                    <input class="input-group-text taskInputs" type="text" id="userNoteInput"
+                        placeholder="Enter the task details:" required>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 col-lg-12">
+                    <input class="taskInputs input-group-text" type="date" id="userDateInput" required>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 col-lg-12">
+                    <input class="taskInputs input-group-text" type="time" id="userTimeInput" required>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 col-lg-12">
+                    <button class="btn btn-primary btn-sm taskButtons" onclick="addNote()">Add a note</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 col-lg-12">
+                    <input type="reset" value="Reset" class="btn btn-secondary btn-sm taskButtons" id="resetBtn">
+                </div>
+            </div>
+        </form>
+    </div>
+
+
+
+    <div class="container">
+        <div id="userNotesList" class="row">
+        </div>
+    </div>
+
+
+    <script src="Note.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>

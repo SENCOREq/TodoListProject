@@ -1,0 +1,150 @@
+body {
+    background-image: url(assets/images/tile.jpg);
+}
+
+.mainHeader {
+    font-family: 'northZone';
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    animation: fadeIn ease 15s;
+}
+
+form {
+    background: url(assets/images/formbg.jpg);
+    text-align: center;
+    margin: auto;
+    margin-bottom: 50px;
+    max-width: 750px;
+    min-height: 346px;
+}
+
+.taskStyle {
+    background-image: url(assets/images/formbg.jpg);
+    text-align: center;
+    margin: auto;
+    min-height: 76px;
+    max-width: 750px;
+    font-size: 25px;
+    font-weight: bolder;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.taskHeader {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 25px;
+    margin-top: 18px;
+    margin-left: 200px;
+    text-align: center;
+}
+
+.taskInputs {
+    max-height: 26px;
+    min-width: 340px;
+    background-color: transparent;
+    margin-left: 100px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 19px;
+    text-align: center;
+}
+
+.taskButtons {
+    margin-top: 19px;
+    max-width: 100px;
+}
+
+#resetBtn {
+    margin-top: 34.5px;
+    max-width: 60px;
+}
+
+.missionStyle {
+    background-image: url(assets/images/notebg.png);
+    background-repeat: no-repeat;
+    max-height: 256px;
+    max-width: 180px;
+    margin-right: 20px;
+    margin-top: 35px;
+    margin-left: 19px;
+    font-size: 20px;
+    padding: 10px;
+    font-family: 'handwriting';
+}
+
+.missionStyleOfLastArrayIndex {
+    background-image: url(assets/images/notebg.png);
+    background-repeat: no-repeat;
+    max-height: 256px;
+    max-width: 180px;
+    margin-right: 20px;
+    margin-top: 35px;
+    margin-left: 19px;
+    font-size: 20px;
+    padding: 7px;
+    font-family: 'handwriting';
+    animation: fadeIn ease 1.5s;
+}
+
+.missionStyleOfLastArrayIndex:hover .cancelMissionStyle {
+    float: right;
+    display: inline;
+    margin: 0;
+    margin-bottom: 10px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.missionStyle:hover .cancelMissionStyle {
+    float: right;
+    display: inline;
+    margin: 0;
+    font-size: 14px;
+    text-align: center;
+}
+
+
+.cancelMissionStyle {
+    display: none;
+
+}
+
+.missionDetails {
+    color: black;
+    background-color: transparent;
+    height: 110px;
+    width: 160px;
+    margin: 0;
+    padding-top: 15px;
+    overflow-y: auto;
+    word-wrap: break-word;
+}
+
+.missionDate {
+    margin-top: 6px;
+    color: black;
+    font-weight: bolder;
+}
+
+.missionTime {
+    color: rgb(55, 31, 151);
+}
+
+@font-face {
+    font-family: 'northZone';
+    src: url(assets/fonts/North\ Zone.otf);
+}
+
+@font-face {
+    font-family: 'handwriting';
+    src: url(assets/fonts/handwriting.ttf);
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 100;
+    }
+}
